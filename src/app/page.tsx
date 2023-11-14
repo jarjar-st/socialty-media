@@ -2,19 +2,25 @@ import Navbar from '@/components/Navbar'
 import React from 'react'
 import { buttonVariants } from "@/components/ui/button"
 import Link from 'next/link'
+import CustomButton from '@/components/CustomButton'
 
 function Home() {
   return (
-    <div className='bg-[url(/banner-1.jpg)] h-[100vh] bg-right bg-no-repeat'>
-      <Navbar/>
-      <div className='text-black text-6xl px-10 pt-12 font-bold'>
-        <p>Need a website</p>
-        <p>but dont&apos;t know</p>
-        <p>where to start?</p>
-        Link
+    <div>
+      <div className='bg-[url(/LíneaGráfica_Actual-101.webp)] w-[100vw] h-[100vh] bg-no-repeat bg-cover'>
+        <Navbar />
+        <div className='text-white text-5xl px-10 md:pl-[5.438rem] pt-12 font-medium tracking-[-0.18rem] md:leading-[4.063rem] md:text-[4rem] max-[320px]:text-[40px]'>
+          <p>Need a website</p>
+          <p>but don&apos;t know</p>
+          <p>where to start?</p>
+        </div>
+        <div className='px-10 md:pl-[5.438rem] pt-3'>
+          <CustomButton text='Click Here' href='?' />
+
+        </div>
       </div>
-      <Link href={"/"} className={buttonVariants({ variant: "outline" })}>Click here</Link>
     </div>
+
   )
 }
 
