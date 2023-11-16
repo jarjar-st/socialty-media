@@ -23,16 +23,45 @@ function Home() {
           <CustomButton text='Click Here' href='?' />
         </div>
       </div>
-        {/* Nuestro Servicio */}
-      <div>
-        <div className='flex justify-start items-start pl-28'>
-          <Image
-          src={"/red1.png"}
-          width={172}
-          height={332}
-          alt='red1'
-          />
+      {/* Nuestro Servicio */}
+      <div className='grid-cols-2 flex'>
+        <div className='relative bg-yellow-400 w-full grid-cols-2'>
+          <div className='pl-28 justify-start  items-start'>
+            <Image
+              src={"/red1.png"}
+              width={172}
+              height={332}
+              alt='red1'
+            />
+          </div>
+          <div className='absolute top-[197px] bg-lime-900 pl-56'>
+            <p className='text-[#1F261F] text-5xl'>
+              OUR SERVICES
+            </p>
+            <p className='text-[#1F261F] text-justify text-2xl leading-normal tracking-[-1.08px]'>
+            Wether you initially only need a company logo, video <br />
+            or the full works to launch the campaign of a new <br /> 
+            brand, we can advise and provide you with cost <br />
+            effective solutions.
+            </p>
+          </div>
         </div>
+        <div className='justify-center items-center bg-orange-500 w-full'>
+
+        </div>
+        {/* <div className='justify-start items-start pl-28 bg-slate-900 flex-shrink-0 p-0'>
+          <Image
+            src={"/red1.png"}
+            width={172}
+            height={332}
+            alt='red1'
+          />
+          <div className='flex-shrink-0 pl-32 bg-zinc-700 p-0'>
+            <p className='text-[#1F261F] text-5xl'>
+              OUR SERVICES
+            </p>
+          </div>
+        </div> */}
       </div>
     </div>
 
