@@ -1,13 +1,22 @@
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import MobNavbar from "@/components/MobNavbar";
+import Footer from '@/components/Footer'
 
 const roboto = Roboto({
-  weight: ["400", "500"],
+  weight: ['300','400', '700', '900'],
+  style: ['normal', 'italic'],
   subsets: ['latin'],
+  display: 'swap',
 })
+
+// const myFont = localFont({ 
+//   src: './Gotham-Black-Regular.ttf',
+//   variable: "--font-gotham", 
+// })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -21,8 +30,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className= {roboto.className}>
+      <body className={roboto.className}>
         {children}
+        {/* <Footer /> */}
+      
       </body>
     </html>
   )

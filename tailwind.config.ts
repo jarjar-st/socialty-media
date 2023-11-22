@@ -13,6 +13,24 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        white: "#fff",
+        crimson: {
+          "100": "#f52432",
+          "200": "rgba(245, 36, 50, 0.5)",
+        },
+        gray: {
+          "100": "#1f261f",
+          "200": "rgba(255, 255, 255, 0)",
+        },
+        dimgray: "#585f58",
+        darkslateblue: "#5d388d",
+        whitesmoke: "#f5f5f5",
+      },
+      // fontFamily: {
+      //   roboto: ['var(--font-roboto)'],
+      //   gotham: ['var(--font-gotham)'],
+      // }
     },
   },
   plugins: [],
