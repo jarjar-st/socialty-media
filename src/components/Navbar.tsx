@@ -19,7 +19,7 @@ function Navbar() {
                     <Link className='navbar__link relative' href={"#"}>
                         Home
                     </Link>
-                    <Link className='navbar__link relative' href={"#"}>
+                    <Link className='navbar__link relative' href={"/about"}>
                         About us
                     </Link>
                     <Link className='navbar__link relative' href={"#"}>
