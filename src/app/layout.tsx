@@ -5,9 +5,11 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import MobNavbar from "@/components/MobNavbar";
 import Footer from '@/components/Footer'
+import { Providers } from "./providers";
+import TestNavbar from '@/components/TestNavbar'
 
 const roboto = Roboto({
-  weight: ['300','400', '700', '900'],
+  weight: ['300', '400', '700', '900'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
   display: 'swap',
@@ -29,12 +31,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body className={roboto.className}>
+        <Providers>
+          {/* <TestNavbar/> */}
+          {children}
+        </Providers>
         {/* <Navbar /> */}
-        {children}
         <Footer />
-      
       </body>
     </html>
   )

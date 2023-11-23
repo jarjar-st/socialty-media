@@ -16,13 +16,13 @@ function Navbar() {
                 </Link>
                 <div className='flex w-fit gap-10 mx-auto font-medium py-4 text-white items-center justify-center'>
 
-                    <Link className='navbar__link relative' href={"#"}>
+                    <Link className='navbar__link relative' href={"/"}>
                         Home
                     </Link>
                     <Link className='navbar__link relative' href={"/about"}>
                         About us
                     </Link>
-                    <Link className='navbar__link relative' href={"#"}>
+                    <Link className='navbar__link relative' href={"/plans"}>
                         Plans
                     </Link>
                     <Link className='navbar__link relative' href={"#"}>

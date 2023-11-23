@@ -1,25 +1,13 @@
-import React from 'react'
-import { buttonVariants } from "@/components/ui/button"
-import Link from 'next/link'
 import CustomButton from '@/components/CustomButton'
+import MobNavbar from '@/components/MobNavbar'
 import Navbar from '@/components/Navbar'
-import MobNavbar from "@/components/MobNavbar";
-import Image from 'next/image'
-import OurServices from '@/components/OurServices'
-import OurServicesMobile from '@/components/OurServicesMobile'
-import ServiceCard from '@/components/ServiceCard'
-import Hero from '@/components/Hero'
-import TestHero from '@/components/TestHero'
+import React from 'react'
 
-
-function Home() {
+function Plans() {
   return (
     <div className=' font-roboto w-full h-full '>
-      {/* Primera Parte */}
-      <div className=' w-full h-[100vh] '>
-        <Hero/>      
-
-        {/* <Navbar />
+      <div className=' w-full h-[100vh] bg-[url("/home2.webp")] bg-cover bg-no-repeat'>
+        <Navbar />
         <MobNavbar />
         <div className='text-white text-5xl px-10 md:pl-[5.438rem] pt-12 font-semibold tracking-[-0.18rem] md:leading-[4.063rem] md:text-[4rem] max-[320px]:text-[40px]'>
           <p>Need a website</p>
@@ -28,61 +16,10 @@ function Home() {
         </div>
         <div className='px-10 md:pl-[5.438rem] pt-3 '>
           <CustomButton text='Click Here' href='?' />
-        </div> */}
+        </div>
+
       </div>
- 
-
-      {/* Nuestro Servicio */}
-      <OurServices />
-      <OurServicesMobile />
-
-      {/* Banner Rojo */}
-      <div className="bg-crimson-100 w-full h-[821px] flex justify-center items-center">
-        <Image
-          className="w-[252px] h-[244px] object-cover "
-          width={504}
-          height={488}
-          alt="letras_blancas"
-          src="/letras-blancas.png"
-        />
-      </div>
-
-      {/* Tarjetas de Servicios */}
-      <div className=' flex flex-wrap flex-col mb-[80px]  lg:mb-0 sm:flex-row lg:gap-5 gap-10 sm:items-start items-center sm:justify-center lg:h-[500px]'>
-        <ServiceCard
-          serviceName='Web Development'
-          description='We develop and create custom website from scratch, fully optimized to help your business capture leads and increase sales. From simple informative websites to fully customized e-commerce websites there are no limits to your goals!'
-          cardImage='/Iconos-Socialty-04.png'
-          overlayImage='/webDevelopmentOverlay.webp'
-        />
-        <ServiceCard
-          serviceName='Graphic Design'
-          description='Your creative team designs eye catching and innovative designs that fit your target audience while developing brand recognition. From logos, social media posts to brochures and printed advisements, we strive to present effective and creative work with new and proven practices.'
-          cardImage='/Iconos-Socialty-05.png'
-          overlayImage='/graphicDesignOverlay.webp'
-        />
-        <ServiceCard
-          serviceName='Social Media'
-          description='Social media is our specialty! Get your business noticed on social media by targeting your specific target market, generating traffic to your profile and website while increasing your brand exposure, growth, and sales. We effectively analyze, manage, maintain, and grow your brand on all social media platforms.'
-          cardImage='/Iconos-Socialty-03.png'
-          overlayImage='/socialMediaOverlay.webp'
-        />
-        <ServiceCard
-          serviceName='Add Ons'
-          description='Paid advertising in Facebook, Instagram, Twitter, Linkedin, Google, Youtube.'
-          cardImage='/Iconos-Socialty-06.png'
-          overlayImage='/addOnsOverlay.webp'
-        />
-        <ServiceCard
-          serviceName='Email Campaings'
-          description='Strategic design and copywriting for your email campaigns. We help you define your audience, establish goals, build your client mailing lists, and a full report of results and recommendations.'
-          cardImage='/Iconos-Socialty-07.png'
-          overlayImage='/emailCampaingsOverlay.webp'
-        />
-      </div>
-
-      {/* Seccion de Paquetes */}
-      <div className='xl:h-[800px] mb-6'>
+      <div className='xl:h-[800px] mb-6 mt-20'>
         <h3 className=' text-center font-extrabold text-[48px] text-[#1F261F] mb-[31px]'>
           START YOUR BUSINESS PACKAGES
         </h3>
@@ -180,8 +117,7 @@ function Home() {
       </div>
 
     </div>
-
   )
 }
 
-export default Home
+export default Plans
