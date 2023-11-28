@@ -18,14 +18,20 @@
     "lucide-react": "^0.292.0",
     "next": "^14.0.3",
     "nodemailer": "^6.9.7",
+<<<<<<< HEAD
     "react": "^18",
     "react-dom": "^18",
+=======
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+>>>>>>> 40afac709412596a113d58a0240f3fed345b0b94
     "react-icons": "^4.12.0",
     "react-slick": "^0.29.0",
     "react-spring": "^9.7.3",
     "slick-carousel": "^1.8.1",
     "tailwind-merge": "^2.0.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "tw-elements": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",

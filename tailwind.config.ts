@@ -7,10 +7,18 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   theme: {
     extend: {
+<<<<<<< HEAD
       
+=======
+      container: {
+        center: true,
+        padding: '15px',
+      },
+>>>>>>> 40afac709412596a113d58a0240f3fed345b0b94
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -37,6 +45,9 @@ const config: Config = {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [
+  require("tw-elements/dist/plugin.cjs"),
+  nextui(),
+],
 }
 export default config
