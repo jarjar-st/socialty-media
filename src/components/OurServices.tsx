@@ -19,7 +19,7 @@ function OurServices() {
       <div className="absolute xl:top-[254px] top-[220px] xl:ml-[350px] lg:ml-[250px] ml-[150px] xl:text-[300px] text-[250px] text1 font-medium not-italic text-crimson-200 text-left comillas" id='comillas'>
         ”
       </div>
-      <div className="absolute xl:top-[574px] top-[460px] 2xl:left-[318px] xl:left-[218px] lg:left-[96px] left-[20px]  xl:text-2xl text-xl tracking-[-0.04em] text-justify inline-block xl:w-[547px] lg:w-[447px] w-[347px] h-[82px]">
+      <div className="absolute xl:top-[574px] top-[460px] 2xl:left-[318px] xl:left-[218px] lg:left-[96px] left-[20px]  xl:text-2xl text-xl tracking-[-0.04em] text-right inline-block xl:w-[547px] lg:w-[447px] w-[347px] h-[82px]">
         Explore what we can do to help you achieve your marketing objectives and
         gain the reach and online visibility required to stand out among other
         brands.If you don&#180;t find a specific service listed, please let us know

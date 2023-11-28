@@ -31,13 +31,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" >
-      <body className={roboto.className}>
+    <html lang="en"  className=' relative'>
+      <body className={`${roboto.className} `}>
         <Providers>
           {/* <TestNavbar/> */}
+        <Navbar />
           {children}
         </Providers>
-        {/* <Navbar /> */}
         <Footer />
       </body>
     </html>

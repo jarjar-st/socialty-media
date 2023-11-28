@@ -6,9 +6,9 @@ import React from 'react'
 function About() {
     return (
         <div className=' relative font-roboto w-full h-full'>
-            <div className='w-full h-[1471px] bg-[url("/about-bg.webp")] bg-cover bg-no-repeat'>
-                <Navbar />
-                <MobNavbar />
+            <div className='w-full h-[1471px] pt-[84px] bg-[url("/about-bg.webp")] bg-cover bg-no-repeat'>
+                {/* <Navbar />
+                <MobNavbar /> */}
                 <div className='text-white  text-5xl px-10 md:pl-[5.438rem] pt-12 font-semibold tracking-[-0.18rem] md:leading-[4.063rem] md:text-[4rem] max-[320px]:text-[40px]'>
                     <p>Need a website</p>
                     <p>but don&apos;t know</p>

@@ -12,12 +12,13 @@ import Hero from '@/components/Hero'
 import TestHero from '@/components/TestHero'
 
 
+
 function Home() {
   return (
     <div className=' font-roboto w-full h-full '>
       {/* Primera Parte */}
       <div className=' w-full h-[100vh] '>
-        <Hero/>      
+        <Hero />
 
         {/* <Navbar />
         <MobNavbar />
@@ -30,7 +31,7 @@ function Home() {
           <CustomButton text='Click Here' href='?' />
         </div> */}
       </div>
- 
+      
 
       {/* Nuestro Servicio */}
       <OurServices />
@@ -48,7 +49,7 @@ function Home() {
       </div>
 
       {/* Tarjetas de Servicios */}
-      <div className=' flex flex-wrap flex-col mb-[80px]  lg:mb-0 sm:flex-row lg:gap-5 gap-10 sm:items-start items-center sm:justify-center lg:h-[500px]'>
+      <div className=' flex  flex-wrap flex-col mb-[80px]  lg:mb-0 sm:flex-row lg:gap-5 gap-10 sm:items-start items-center sm:justify-center lg:h-[500px]'>
         <ServiceCard
           serviceName='Web Development'
           description='We develop and create custom website from scratch, fully optimized to help your business capture leads and increase sales. From simple informative websites to fully customized e-commerce websites there are no limits to your goals!'
@@ -113,9 +114,18 @@ function Home() {
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
-                <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
+                <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+                >
+                  <Link
+                    className='  px-[90px] py-[10px] rounded-[10px] text-white'
+                    href='/contact'
+                  >
+                    Get Started
+                  </Link>
+                </div>
+                {/* <button className=' bg-[#F52432] w-full h-full rounded-[10px] hover:bg-[#FF4F5A]'>
                   Get Started
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -145,9 +155,18 @@ function Home() {
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
-                <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
+              <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+                >
+                  <Link
+                    className='  px-[90px] py-[10px] rounded-[10px] text-white'
+                    href='/contact'
+                  >
+                    Get Started
+                  </Link>
+                </div>
+                {/* <button className=' bg-[#F52432] w-full h-full rounded-[10px] hover:bg-[#FF4F5A]'>
                   Get Started
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -169,9 +188,19 @@ function Home() {
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
-                <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
+              <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+                >
+                  <Link
+                    className='  px-[90px] py-[10px] rounded-[10px] text-white'
+                    href='/contact'
+                  >
+                    Get Started
+                  </Link>
+                </div>
+                {/* 
+                <button className=' bg-[#F52432] w-full h-full rounded-[10px] hover:bg-[#FF4F5A]'>
                   Get Started
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

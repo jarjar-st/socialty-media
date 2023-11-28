@@ -1,14 +1,17 @@
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 function Footer() {
+    
     return (
+        
         <div className=' w-full lg:h-[315px] h-[400px]  [background:linear-gradient(90deg,_#f52432,_#853375_73.98%,_#5d388d)]'>
             <div className=' flex flex-row justify-between'>
-                <div className=' w-[566px] h-[266px] bg-[url("/footer1.webp")] bg-cover  xl:bg-[center_right_5rem] lg:bg-[center_left_-15rem] sm:bg-[center_left_-24rem] bg-no-repeat  mt-[49px]'>
+                <div className=' w-[566px] h-[266px] sm:bg-[url("/footer1.webp")] sm:bg-cover  xl:bg-[center_right_5rem] lg:bg-[center_left_-15rem] sm:bg-[center_left_-24rem] bg-no-repeat  mt-[49px]'>
                 </div>
-                <div className=' w-[431px] h-[196px] flex flex-col justify-start items-center pt-[117px]'>
+                <div className='  w-[431px] h-[196px] flex flex-col justify-start items-center pt-[117px]'>
                     <div className=' w-[24px] h-[24px]'>
                         <Image
                             src={"/email-1-1@2x.webp"}
@@ -52,26 +55,32 @@ function Footer() {
                     </div>
                 </div>
                 <div className='flow flex-col overflow-hidden'>
-                    <div className='  mt-[-62px] mr-[-99px] w-[566px] h-[223px] bg-[url("/footer2.webp")] bg-cover '>
+                    <div className='  mt-[-62px] mr-[-99px] w-[566px] h-[223px] sm:bg-[url("/footer2.webp")] sm:bg-cover '>
                     </div>
-                    <div className='  ml-[195px] w-[130px] h-[50px] md:flex flex-row mt-[55px] gap-[30px] lg:relative xl:static hidden'>
+                    <div className='  ml-[195px] w-[130px] h-[50px] md:flex flex-row mt-[55px] gap-[30px] lg:relative xl:static hidden '>
                         <div>
-                            <Image
-                                className=' lg:absolute lg:right-[180px] xl:static xl:right-0'
-                                src={"/facebookIcono.webp"}
-                                alt='Icono de Correo'
-                                width={64}
-                                height={64}
-                            />
+                            <Link href={"#"}>
+                                <Image
+                                    className=' lg:absolute lg:right-[180px] xl:static xl:right-0 hover:opacity-50 '
+                                    src={"/facebookIcono.webp"}
+                                    alt='Icono de facebook'
+                                    width={64}
+                                    height={64}
+                                />
+                            </Link>
+
                         </div>
                         <div>
-                            <Image
-                                className=' lg:absolute lg:right-[90px] xl:static xl:right-0'
-                                src={"/instagramIcono.webp"}
-                                alt='Icono de Correo'
-                                width={64}
-                                height={64}
-                            />
+                            <Link href={"#"}>
+                                <Image
+                                    className=' lg:absolute lg:right-[90px] xl:static xl:right-0 hover:opacity-50'
+                                    src={"/instagramIcono.webp"}
+                                    alt='Icono de instagram'
+                                    width={64}
+                                    height={64}
+                                />
+                            </Link>
+
                         </div>
 
                     </div>

@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { useState, useRef, useEffect } from 'react';
+import Link from 'next/link';
 
 interface CardProps {
     serviceName: string;
@@ -59,7 +60,7 @@ const ServiceCard: React.FC<CardProps> = ({ serviceName, description, cardImage,
                                 <p className="m-0 leading-6 font-semibold">{serviceName}</p>
                             </div>
                             <button
-                                className='text-white mt-[14.42px]  bg-crimson-100 rounded-[10px] w-[142.125px] h-[36.595px] text-[20px] font-normal'
+                                className='text-white mt-[14.42px]  bg-crimson-100 rounded-[10px] w-[142.125px] h-[36.595px] text-[20px] font-normal hover:bg-[#FF4F5A]'
                                 onClick={handleOverlayClick}
                             >
                                 Check this
@@ -90,11 +91,11 @@ const ServiceCard: React.FC<CardProps> = ({ serviceName, description, cardImage,
 
                         </div>
 
-                        <button
-                            className='text-white  bg-crimson-100 rounded-[10px] w-[142.125px] h-[36.595px] text-[20px] font-normal mt-10'
+                        <Link href='/contact'
+                            className='text-white  bg-crimson-100 rounded-[10px] w-[142.125px] h-[36.595px] text-[20px] pt-[2px] font-normal text-center mt-10 hover:bg-[#FF4F5A]'
                         >
                             Get started
-                        </button>
+                        </Link>
                     </div>
                 </div>
             )}

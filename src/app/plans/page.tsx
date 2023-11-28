@@ -1,14 +1,15 @@
 import CustomButton from '@/components/CustomButton'
 import MobNavbar from '@/components/MobNavbar'
 import Navbar from '@/components/Navbar'
+import Link from 'next/link'
 import React from 'react'
 
 function Plans() {
   return (
     <div className=' font-roboto w-full h-full '>
-      <div className=' w-full h-[100vh] bg-[url("/home2.webp")] bg-cover bg-no-repeat'>
-        <Navbar />
-        <MobNavbar />
+      <div className=' w-full pt-[84px] h-[100vh] bg-[url("/home2.webp")] bg-cover bg-no-repeat'>
+        {/* <Navbar />
+        <MobNavbar /> */}
         <div className='text-white text-5xl px-10 md:pl-[5.438rem] pt-12 font-semibold tracking-[-0.18rem] md:leading-[4.063rem] md:text-[4rem] max-[320px]:text-[40px]'>
           <p>Need a website</p>
           <p>but don&apos;t know</p>
@@ -50,9 +51,18 @@ function Plans() {
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
-                <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
+                <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+                >
+                  <Link
+                    className='  px-[90px] py-[10px] rounded-[10px] text-white'
+                    href='/contact'
+                  >
+                    Get Started
+                  </Link>
+                </div>
+                {/* <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
                   Get Started
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -82,9 +92,18 @@ function Plans() {
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
-                <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
+                <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+                >
+                  <Link
+                    className='  px-[90px] py-[10px] rounded-[10px] text-white'
+                    href='/contact'
+                  >
+                    Get Started
+                  </Link>
+                </div>
+                {/* <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
                   Get Started
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -106,9 +125,18 @@ function Plans() {
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
-                <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
+                <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+                >
+                  <Link
+                    className='  px-[90px] py-[10px] rounded-[10px] text-white'
+                    href='/contact'
+                  >
+                    Get Started
+                  </Link>
+                </div>
+                {/* <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
                   Get Started
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
