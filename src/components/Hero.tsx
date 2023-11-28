@@ -17,11 +17,17 @@ function Hero() {
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [opacity, setOpacity] = useState(1);
+
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            // Move to the next slide
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+            setOpacity(0);
+            setTimeout(() => {
+                // Move to the next slide
+                setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+                setOpacity(1);
+            }, 200); // same duration as your transition
         }, 4000);
 
         return () => {
@@ -33,8 +39,8 @@ function Hero() {
     return (
         <div style={{
             backgroundImage: `url(${slides[currentIndex].img})`,
-            transition:'opacity 5.5s ease-in-out 3.5s',
-            opacity: 1,
+            transition:'opacity 0.2s ease-in-out',
+            opacity: opacity,
             position: 'absolute',
             top: 0,
             left: 0,

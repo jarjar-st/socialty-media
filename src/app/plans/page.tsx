@@ -1,6 +1,7 @@
 import CustomButton from '@/components/CustomButton'
 import MobNavbar from '@/components/MobNavbar'
 import Navbar from '@/components/Navbar'
+import Link from 'next/link'
 import React from 'react'
 
 function Plans() {
@@ -50,9 +51,18 @@ function Plans() {
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
-                <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
+                <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+                >
+                  <Link
+                    className='  px-[90px] py-[10px] rounded-[10px] text-white'
+                    href='/contact'
+                  >
+                    Get Started
+                  </Link>
+                </div>
+                {/* <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
                   Get Started
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -82,9 +92,18 @@ function Plans() {
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
-                <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
+                <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+                >
+                  <Link
+                    className='  px-[90px] py-[10px] rounded-[10px] text-white'
+                    href='/contact'
+                  >
+                    Get Started
+                  </Link>
+                </div>
+                {/* <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
                   Get Started
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -106,9 +125,18 @@ function Plans() {
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
-                <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
+                <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+                >
+                  <Link
+                    className='  px-[90px] py-[10px] rounded-[10px] text-white'
+                    href='/contact'
+                  >
+                    Get Started
+                  </Link>
+                </div>
+                {/* <button className=' bg-[#F52432] w-full h-full rounded-[10px]'>
                   Get Started
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

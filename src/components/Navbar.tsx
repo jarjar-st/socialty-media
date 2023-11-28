@@ -25,7 +25,7 @@ function Navbar() {
                     <Link className='navbar__link relative' href={"/plans"}>
                         Plans
                     </Link>
-                    <Link className='navbar__link relative' href={"#"}>
+                    <Link className='navbar__link relative' href={"/contact"}>
                         Contact
                     </Link>
                 </div>
