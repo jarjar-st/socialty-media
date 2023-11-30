@@ -11,7 +11,7 @@ function Footer() {
             <div className=' flex flex-row justify-between'>
                 <div className=' w-[566px] h-[266px] sm:bg-[url("/footer1.webp")] sm:bg-cover  xl:bg-[center_right_5rem] lg:bg-[center_left_-15rem] sm:bg-[center_left_-24rem] bg-no-repeat  mt-[49px]'>
                 </div>
-                <div className='  w-[431px] h-[196px] flex flex-col justify-start items-center pt-[117px]'>
+                <div className='  w-full  sm:w-[431px] h-[196px] flex flex-col justify-start items-center pt-[117px]'>
                     <div className=' w-[24px] h-[24px]'>
                         <Image
                             src={"/email-1-1@2x.webp"}
@@ -20,7 +20,7 @@ function Footer() {
                             height={48}
                         />
                     </div>
-                    <div className=' w-[431px] h-[30px] text-[20px] text-center text-white font-normal tracking-[-0.9px]'>
+                    <div className='  w-full sm:w-[431px] h-[30px] text-[20px] text-center text-white font-normal tracking-[-0.9px]'>
                         hello@socialtymedia.com
                     </div>
                     <div className=' flex flex-row mt-[40px] gap-8 lg:hidden'>
@@ -44,7 +44,7 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div className=' w-[431px] h-[30px] text-center text-white lg:pt-[112px] pt-[50px]'>
+                    <div className=' w-full sm:w-[431px] h-[30px] text-center text-white lg:pt-[112px] pt-[50px]'>
                         <Link
                             href={"#"}
                             className=' text-center text-[16px] tracking-[-0.72px]'

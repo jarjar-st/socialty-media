@@ -54,7 +54,7 @@ function Plans() {
                 <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
                 >
                   <Link
-                    className='  px-[90px] py-[10px] rounded-[10px] text-white'
+                    className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
                     href='/contact'
                   >
                     Get Started
@@ -95,7 +95,7 @@ function Plans() {
                 <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
                 >
                   <Link
-                    className='  px-[90px] py-[10px] rounded-[10px] text-white'
+                    className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
                     href='/contact'
                   >
                     Get Started
@@ -128,7 +128,7 @@ function Plans() {
                 <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
                 >
                   <Link
-                    className='  px-[90px] py-[10px] rounded-[10px] text-white'
+                    className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
                     href='/contact'
                   >
                     Get Started

@@ -14,24 +14,12 @@
     "axios": "^1.6.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
-    "framer-motion": "^10.16.5",
-    "lucide-react": "^0.292.0",
     "next": "^14.0.3",
     "nodemailer": "^6.9.7",
-<<<<<<< HEAD
     "react": "^18",
     "react-dom": "^18",
-=======
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
->>>>>>> 40afac709412596a113d58a0240f3fed345b0b94
-    "react-icons": "^4.12.0",
-    "react-slick": "^0.29.0",
-    "react-spring": "^9.7.3",
-    "slick-carousel": "^1.8.1",
     "tailwind-merge": "^2.0.0",
-    "tailwindcss-animate": "^1.0.7",
-    "tw-elements": "^1.0.0"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -11,14 +11,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-<<<<<<< HEAD
-      
-=======
       container: {
         center: true,
         padding: '15px',
       },
->>>>>>> 40afac709412596a113d58a0240f3fed345b0b94
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -46,7 +42,6 @@ const config: Config = {
   },
   darkMode: "class",
   plugins: [
-  require("tw-elements/dist/plugin.cjs"),
   nextui(),
 ],
 }

@@ -47,7 +47,7 @@ function Hero() {
     }, []);
 
     return (
-        <div  style={{
+        <div style={{
             backgroundImage: `url(${slides[currentIndex].img})`,
             transition: 'opacity 0.2s ease-in-out',
             opacity: opacity,
@@ -59,7 +59,7 @@ function Hero() {
         }} className=' w-full pt-[84px] h-[100vh] bg-no-repeat bg-cover overflow-hidden'>
             {/* <Navbar />
             <MobNavbar /> */}
-            <div className='text-white text-5xl px-10 md:pl-[5.438rem] pt-12 font-semibold tracking-[-0.18rem] md:leading-[4.063rem] md:text-[4rem] max-[320px]:text-[40px]'>
+            <div className='text-white text-5xl px-10 md:pl-[5.438rem] pt-12 font-semibold tracking-[-0.18rem] md:leading-[4.063rem] md:text-[4rem] max-[320px]:text-[40px] [text-shadow:0px_4px_4px_rgba(0,_0,_0,_0.25)]'>
                 <p>{slides[currentIndex].text}</p>
                 <p>{slides[currentIndex].text1}</p>
                 <p className={currentIndex > 0 ? ' text-[24px] tracking-[-1.08px] leading-[25px]' : ''}>

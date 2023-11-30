@@ -94,12 +94,12 @@ function ContactForm() {
                                             <label className=' mr-[25px]' >Standard</label>
                                         </div>
                                         <div>
-                                            <input  onChange={(e) => setPlan(e.target.value)}  className='mr-[4px]' type="checkbox" name="Premiun" value="Premiun" />
+                                            <input  onChange={(e) => setPlan(e.target.value)}  className='mr-[4px]' type="checkbox" name="Premiun" value="Premium" />
                                             <label className=' mr-[25px]'>Premiun</label>
 
                                         </div>
                                         <div>
-                                            <input  onChange={(e) => setPlan(e.target.value)}  className='mr-[4px]' type="checkbox" name="CustomMade" value="checkbox" />
+                                            <input  onChange={(e) => setPlan(e.target.value)}  className='mr-[4px]' type="checkbox" name="CustomMade" value="CustomMade" />
                                             <label className=' mr-[5.7px]'>Custom Made</label>
 
                                         </div>
@@ -107,7 +107,7 @@ function ContactForm() {
                                 </label>
 
                             </div>
-                            <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
+                            <div className=" sm:w-[287px] w-[190px] h-[43px] max-[640px]:mt-[70px] max-[640px]:mx-auto text-white">
                             <button type="submit" className=' bg-[#F52432] w-full h-full rounded-[10px] hover:bg-[#FF4F5A]'>
                                 Get information
                             </button>

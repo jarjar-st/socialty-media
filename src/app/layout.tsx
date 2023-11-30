@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en"  className=' relative'>
       <body className={`${roboto.className} `}>
         <Providers>
-          {/* <TestNavbar/> */}
+          <TestNavbar/>
         <Navbar />
           {children}
         </Providers>

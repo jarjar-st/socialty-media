@@ -7,7 +7,7 @@ import Image from 'next/image'
 function Navbar() {
     const [activeLink, setActiveLink] = useState('Home');
     return (
-        <nav className=' hidden sm:absolute w-full bg-transparent'>
+        <nav className=' sm:absolute w-full bg-transparent max-[768px]:hidden'>
             <div className=' mx-auto pl-[30px] flex'>
                 <Link href={"/"} className='flex z-40 font-semibold pl-[2.5rem]'>
                     <Image 
@@ -18,7 +18,7 @@ function Navbar() {
                     />
                 </Link>
                 
-                <div className=' z-10  flex w-[430px] h-[23px] gap-10 mx-auto font-medium py-4 text-white items-center justify-center mt-[43px] text-[20px] ml-[324px] '>
+                <div className=' z-10  flex w-[430px] h-[23px] gap-10 mx-auto font-medium py-4 text-white items-center justify-center mt-[43px] text-[20px]  ml-auto '>
 
                     <Link className={`navbar__link relative hover:underline decoration-[0.5px] ${activeLink === 'Home' ? 'font-bold' : ''}`} onClick={() => setActiveLink('Home')}  href={"/"}>
                         Home
