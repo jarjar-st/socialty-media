@@ -1,18 +1,16 @@
 import CustomButton from '@/components/CustomButton'
-import MobNavbar from '@/components/MobNavbar'
-import Navbar from '@/components/Navbar'
 import Link from 'next/link'
 import React from 'react'
 
 function Plans() {
   return (
     <div className=' font-roboto w-full h-full '>
-      <div className=' w-full pt-[84px] h-[100vh] bg-[url("/home2.webp")] bg-cover bg-no-repeat'>
+      <div className=' w-full pt-[164px] h-[100vh] bg-[url("/home2.webp")] bg-cover bg-no-repeat'>
         {/* <Navbar />
         <MobNavbar /> */}
-        <div className='text-white text-5xl px-10 md:pl-[5.438rem] pt-12 font-semibold tracking-[-0.18rem] md:leading-[4.063rem] md:text-[4rem] max-[320px]:text-[40px]'>
+        <div className='text-white text-5xl px-10 md:pl-[5.438rem] pt-12 font-semibold tracking-[-0.18rem] md:leading-[4.063rem] md:text-[4rem] max-[320px]:text-[40px] [text-shadow:0px_4px_4px_rgba(0,_0,_0,_0.25)]'>
           <p>Need a website</p>
-          <p>but don&apos;t know</p>
+          <p>but don´t know</p>
           <p>where to start?</p>
         </div>
         <div className='px-10 md:pl-[5.438rem] pt-3 '>
@@ -81,8 +79,9 @@ function Plans() {
                 <ul className="m-0 pl-6 list-disc">
                   <li className="mb-0">Logo Design (3 concepts- 3 revisions)</li>
                   <li className="mb-0">
-                    5 posts per week per accountAdvance website design
+                    5 posts per week per account
                   </li>
+                  <li className="mb-0">Advance website design</li>
                   <li className="mb-0">2 Social Media accounts per month</li>
                   <li className="mb-0">Account Set up</li>
                   <li className="mb-0">Basic content strategy</li>
@@ -121,7 +120,10 @@ function Plans() {
               </div>
               <div className=' sm:w-[307px] w-[290px] h-[301px] text-left tracking-[-0.04em]'>
                 <ul className="m-0 pl-6 list-disc">
-                  <li className="mb-0">Only need a website, just social media management or specific services?Request a personalized quote for your individual needs.</li>
+                <li className="mb-0 text-[#1F261F] font-normal">
+                    <p>Only need a website, just social media management or specific services?</p>
+                    <p>Request a personalized quote for your individual needs.</p>
+                    </li>
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">

@@ -1,15 +1,10 @@
 import React from 'react'
-import { buttonVariants } from "@/components/ui/button"
 import Link from 'next/link'
-import CustomButton from '@/components/CustomButton'
-import Navbar from '@/components/Navbar'
-import MobNavbar from "@/components/MobNavbar";
 import Image from 'next/image'
 import OurServices from '@/components/OurServices'
 import OurServicesMobile from '@/components/OurServicesMobile'
 import ServiceCard from '@/components/ServiceCard'
 import Hero from '@/components/Hero'
-import TestHero from '@/components/TestHero'
 
 
 
@@ -58,7 +53,7 @@ function Home() {
         />
         <ServiceCard
           serviceName='Graphic Design'
-          description='Your creative team designs eye catching and innovative designs that fit your target audience while developing brand recognition. From logos, social media posts to brochures and printed advisements, we strive to present effective and creative work with new and proven practices.'
+          description='Our creative team designs eye catching and innovative designs that fit your target audience while developing brand recognition. From logos, social media posts to brochures and printed advertisement, we strive to present effective and creative work with new and proven practices.'
           cardImage='/Iconos-Socialty-05.png'
           overlayImage='/graphicDesignOverlay.webp'
         />
@@ -144,8 +139,9 @@ function Home() {
                 <ul className="m-0 pl-6 list-disc">
                   <li className="mb-0">Logo Design (3 concepts- 3 revisions)</li>
                   <li className="mb-0">
-                    5 posts per week per accountAdvance website design
+                    5 posts per week per account
                   </li>
+                  <li className="mb-0">Advance website design</li>
                   <li className="mb-0">2 Social Media accounts per month</li>
                   <li className="mb-0">Account Set up</li>
                   <li className="mb-0">Basic content strategy</li>
@@ -164,9 +160,6 @@ function Home() {
                     Get Started
                   </Link>
                 </div>
-                {/* <button className=' bg-[#F52432] w-full h-full rounded-[10px] hover:bg-[#FF4F5A]'>
-                  Get Started
-                </button> */}
               </div>
             </div>
           </div>
@@ -179,12 +172,15 @@ function Home() {
               <div className='  w-[151px] h-[28px] text-center mt-[40px] text-[24px] font-extrabold text-[#5D388D] whitespace-nowrap'>
                 Custom Made
               </div>
-              <div className=' mx-[33px] mt-[30px] leading-[25px] sm:w-[294px] w-[290px] h-[82px] text-center text-[20px] font-semibold tracking-[-0.9px] inline-block'>
-                Best for new entrepreneurs needing a basic informative website.
+              <div className=' mx-[33px] mt-[30px] leading-[25px] sm:w-[294px] w-[290px] h-[82px] text-center text-[20px] font-semibold tracking-[-0.9px] inline-block text-[#1F261F]'>
+                Best for entrepreneurs looking for specific needs
               </div>
-              <div className=' sm:w-[307px] w-[290px] h-[301px] text-left tracking-[-0.04em]'>
+              <div className=' sm:w-[307px] text-[#1F261F] w-[290px] h-[301px] text-left tracking-[-0.04em]'>
                 <ul className="m-0 pl-6 list-disc">
-                  <li className="mb-0">Only need a website, just social media management or specific services?Request a personalized quote for your individual needs.</li>
+                  <li className="mb-0 text-[#1F261F] font-normal">
+                    <p>Only need a website, just social media management or specific services?</p>
+                    <p>Request a personalized quote for your individual needs.</p>
+                    </li>
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">

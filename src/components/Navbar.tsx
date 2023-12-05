@@ -12,8 +12,8 @@ function Navbar() {
                 <Link href={"/"} className='flex z-40 font-semibold pl-[2.5rem]'>
                     <Image 
                     src={"/LogoSocialtyMedia.webp"}
-                    width={101}
-                    height={111}
+                    width={151}
+                    height={151}
                     alt="Logo"
                     />
                 </Link>

@@ -1,7 +1,5 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import Navbar from './Navbar';
-import MobNavbar from './MobNavbar';
 import CustomButton from './CustomButton';
 
 function Hero() {
@@ -13,13 +11,13 @@ function Hero() {
             text2: "where to start?",
         },
         {
-            img: "/home2.webp",
+            img: "/Conocenos.webp",
             text: "TIRED OF THE",
             text1: "RAT RACE?",
             text2: " Get Out Now with our convenient <br> start up packages.",
         },
         {
-            img: "/about-bg.webp",
+            img: "/planes.webp",
             text: "Start your own",
             text1: "business now",
             text2: "We take care of your LOGO, SOCIAL MEDIA & WEBSITE <br> or you can choose from different plans that suit your <br> individual businness needs",
@@ -38,7 +36,7 @@ function Hero() {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
                 setOpacity(1);
             }, 200); // same duration as your transition
-        }, 4000);
+        }, 8000);
 
         return () => {
             // Clear the interval when the component is unmounted
@@ -56,7 +54,7 @@ function Hero() {
             left: 0,
             right: 0,
             bottom: 0,
-        }} className=' w-full pt-[84px] h-[100vh] bg-no-repeat bg-cover overflow-hidden'>
+        }} className={currentIndex == 1? 'w-full pt-[164px] h-[100vh] bg-no-repeat bg-cover bg-bottom overflow-hidden' :'w-full pt-[164px] h-[100vh] bg-no-repeat bg-cover overflow-hidden'}>
             {/* <Navbar />
             <MobNavbar /> */}
             <div className='text-white text-5xl px-10 md:pl-[5.438rem] pt-12 font-semibold tracking-[-0.18rem] md:leading-[4.063rem] md:text-[4rem] max-[320px]:text-[40px] [text-shadow:0px_4px_4px_rgba(0,_0,_0,_0.25)]'>
