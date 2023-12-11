@@ -17,9 +17,9 @@ export default function App() {
     <Navbar onMenuOpenChange={setIsMenuOpen} className=" lg:hidden ">
       <Link href={"/"} className='flex z-40 font-semibold '>
         <Image
-          src={"/LogoSocialtyMedia.webp"}
-          width={101}
-          height={111}
+          src={"/Blanco-10.webp"}
+          width={61}
+          height={61}
           alt="Logo"
         />
       </Link>

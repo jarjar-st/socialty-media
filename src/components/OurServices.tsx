@@ -38,10 +38,10 @@ function OurServices() {
         </div>
       </div>
 
-      <div className=' bg-slate-900 absolute top-[57px] 2xl:left-[1100px] xl:left-[803px] lg:left-[583px] left-[393px] xl:w-[463px] xl:h-[473px] lg:w-[413px] w-[350px]'>
+      <div className=' absolute top-[57px] 2xl:left-[1100px] xl:left-[803px] lg:left-[583px] left-[393px] xl:w-[463px] xl:h-[473px] lg:w-[413px] w-[350px]'>
         <Image
           className='xl:w-[513px] xl:h-[473px] object-cover'
-          src={"/chica-11.png"}
+          src={"/joven.png"}
           width={513}
           height={473}
           alt='red1'

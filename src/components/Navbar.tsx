@@ -8,17 +8,17 @@ function Navbar() {
     const [activeLink, setActiveLink] = useState('Home');
     return (
         <nav className=' sm:absolute w-full bg-transparent max-[768px]:hidden'>
-            <div className=' mx-auto pl-[30px] flex'>
+            <div className='  pl-[30px] pt-[15px] flex'>
                 <Link href={"/"} className='flex z-40 font-semibold pl-[2.5rem]'>
                     <Image 
-                    src={"/LogoSocialtyMedia.webp"}
-                    width={151}
-                    height={151}
+                    src={"/Blanco-10.webp"}
+                    width={101}
+                    height={101}
                     alt="Logo"
                     />
                 </Link>
                 
-                <div className=' z-10  flex w-[430px] h-[23px] gap-10 mx-auto font-medium py-4 text-white items-center justify-center mt-[43px] text-[20px]  ml-auto '>
+                <div className=' z-10  flex w-[430px] h-[23px] gap-10 mx-auto pr-8 font-medium py-4 text-white items-center justify-center mt-[43px] text-[20px]  '>
 
                     <Link className={`navbar__link relative hover:underline decoration-[0.5px] ${activeLink === 'Home' ? 'font-bold' : ''}`} onClick={() => setActiveLink('Home')}  href={"/"}>
                         Home

@@ -22,6 +22,9 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: 'Social Media',
   description: 'Social Media services for your business',
+  icons: {
+    icon: '/LogoSocialtyMedia.png',
+  }
 }
 
 export default function RootLayout({

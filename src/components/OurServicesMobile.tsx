@@ -26,10 +26,10 @@ function OurServices() {
         brands.If you don&#180;t find a specific service listed, please let us know
         filling out our contact form.
       </div>
-      <div className='absolute bg-slate-900 top-[870px] max-[375px]:top-[920px] max-[330px]:top-[1100px] w-auto'>
+      <div className='absolute  top-[870px] max-[375px]:top-[920px] max-[330px]:top-[1100px] w-auto'>
         <Image
           className='object-cover'
-          src={"/chica-11.png"}
+          src={"/joven.png"}
           width={513}
           height={473}
           alt='red1'
