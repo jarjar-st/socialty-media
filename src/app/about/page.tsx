@@ -4,9 +4,8 @@ import React from 'react'
 function About() {
     return (
         <div className=' relative font-roboto w-full h-full'>
-            <div className='w-full min-[325px]:h-[1571px] h-[1672px]  pt-[164px] bg-[url("/about-bg.webp")] bg-cover bg-right bg-no-repeat'>
-                {/* <Navbar />
-                <MobNavbar /> */}
+            <div className='w-full min-[325px]:h-[1571px] h-[1672px]  pt-[164px] bg-[url("/about-bg.webp")] bg-cover lg:bg-right sm:bg-[top_left_-16rem] bg-[top_right_-38rem] bg-no-repeat'>
+
                 <div className='text-white  text-5xl px-10 md:pl-[5.438rem] pt-12 font-semibold tracking-[-0.18rem] md:leading-[4.063rem] md:text-[4rem] max-[320px]:text-[40px] [text-shadow:0px_4px_4px_rgba(0,_0,_0,_0.25)]'>
                     <p>Need a website</p>
                     <p>but don´t know</p>

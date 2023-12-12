@@ -22,6 +22,22 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: 'Social Media',
   description: 'Social Media services for your business',
+  keywords: 'marketing digital, desarrollo web, SEO, redes sociales, publicidad online',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://socialtymedia.com',
+    title: 'Socialty Media',
+    description: 'Social Media services for your business',
+    images: [
+      {
+        url: '/LogoSocialtyMedia.png',
+        width: 1200,
+        height: 630,
+        alt: 'Socialty Media',
+      },
+    ],
+  },
   icons: {
     icon: '/LogoSocialtyMedia.png',
   }

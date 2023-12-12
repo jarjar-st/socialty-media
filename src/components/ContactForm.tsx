@@ -28,12 +28,12 @@ function ContactForm() {
         };
         console.log(`Aqui esta ALV ${formData}`);
 
-        // try {
-        //     await axios.post('/api/sendEmail', formData);
-        //     alert('Email sent successfully');
-        // } catch (error) {
-        //     alert('Failed to send email');
-        // }
+        try {
+            await axios.post('/api/sendEmail', formData);
+            alert('Email sent successfully');
+        } catch (error) {
+            alert('Failed to send email');
+        }
     };
         
 
