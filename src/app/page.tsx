@@ -14,17 +14,6 @@ function Home() {
       {/* Primera Parte */}
       <div className=' w-full h-[100vh] '>
         <Hero />
-
-        {/* <Navbar />
-        <MobNavbar />
-        <div className='text-white text-5xl px-10 md:pl-[5.438rem] pt-12 font-semibold tracking-[-0.18rem] md:leading-[4.063rem] md:text-[4rem] max-[320px]:text-[40px]'>
-          <p>Need a website</p>
-          <p>but don&apos;t know</p>
-          <p>where to start?</p>
-        </div>
-        <div className='px-10 md:pl-[5.438rem] pt-3 '>
-          <CustomButton text='Click Here' href='?' />
-        </div> */}
       </div>
       
 
@@ -108,19 +97,17 @@ function Home() {
                   <li className="mb-0">Comments and customer interaction not included</li>
                 </ul>
               </div>
-              <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
+              <div className=" sm:w-[287px] w-[190px] h-[43px] text-white font-bold">
                 <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
                 >
                   <Link
                     className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
+                    aria-label='Contact Us'
                     href='/contact'
                   >
                     Get Started
                   </Link>
                 </div>
-                {/* <button className=' bg-[#F52432] w-full h-full rounded-[10px] hover:bg-[#FF4F5A]'>
-                  Get Started
-                </button> */}
               </div>
             </div>
           </div>
@@ -150,11 +137,12 @@ function Home() {
                   <li>Comments and customer interaction included</li>
                 </ul>
               </div>
-              <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
+              <div className=" sm:w-[287px] w-[190px] h-[43px] text-white font-bold">
               <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
                 >
                   <Link
                     className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
+                    aria-label='Contact Us'
                     href='/contact'
                   >
                     Get Started
@@ -183,20 +171,18 @@ function Home() {
                     </li>
                 </ul>
               </div>
-              <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
+              <div className=" sm:w-[287px] w-[190px] h-[43px] text-white font-bold">
               <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
                 >
                   <Link
                     className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
+                    aria-label='Contact Us'
                     href='/contact'
                   >
                     Get Started
                   </Link>
                 </div>
-                {/* 
-                <button className=' bg-[#F52432] w-full h-full rounded-[10px] hover:bg-[#FF4F5A]'>
-                  Get Started
-                </button> */}
+
               </div>
             </div>
           </div>

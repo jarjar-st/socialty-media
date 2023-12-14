@@ -27,9 +27,10 @@ function OurServices() {
         filling out our contact form.
         <div className=" mt-[40px] xl:ml-[260px] lg:ml-[160px] ml-[50px] sm:w-[287px] w-[190px] h-[43px] text-white">
           <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] pt-[6px] hover:bg-[#FF4F5A]'
-          > 
+          >
             <Link
               className=' rounded-[10px] text-white text-center    px-[29.2%]  py-[9px]  '
+              aria-label='Contact Us'
               href='/contact'
             >
               Get Started

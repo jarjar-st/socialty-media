@@ -20,7 +20,7 @@ const roboto = Roboto({
 // })
 
 export const metadata: Metadata = {
-  title: 'Social Media',
+  title: 'Socialty Media',
   description: 'Social Media services for your business',
   keywords: 'marketing digital, desarrollo web, SEO, redes sociales, publicidad online',
   openGraph: {

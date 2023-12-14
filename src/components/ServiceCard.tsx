@@ -91,7 +91,9 @@ const ServiceCard: React.FC<CardProps> = ({ serviceName, description, cardImage,
 
                         </div>
 
-                        <Link href='/contact'
+                        <Link
+                            href='/contact'
+                            aria-label='Contact Us'
                             className='text-white  bg-crimson-100 rounded-[10px] w-[142.125px] h-[36.595px] text-[20px] pt-[2px] font-normal text-center mt-10 hover:bg-[#FF4F5A]'
                         >
                             Get started

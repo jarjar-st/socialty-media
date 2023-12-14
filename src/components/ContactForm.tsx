@@ -3,6 +3,7 @@ import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
 import { FormEvent } from 'react'
+import { Button } from "@nextui-org/react";
 
 
 
@@ -13,10 +14,12 @@ function ContactForm() {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [message, setMessage] = useState('');
     const [plan, setPlan] = useState('');
+    const [statusMessage, setStatusMessage] = useState('Get information');
+    const [isLoading, setIsLoading] = useState(false);
 
 
 
-    const handleSubmit = async (event: FormEvent<HTMLFormElement>) =>  {
+    const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
         const formData = {
@@ -26,16 +29,22 @@ function ContactForm() {
             message,
             plan
         };
-        console.log(`Aqui esta ALV ${formData}`);
-
+        setIsLoading(true);
         try {
-            await axios.post('/api/sendEmail', formData);
-            alert('Email sent successfully');
+            const res = await axios.post('/api/sendEmail', formData, {
+                headers: { 'Content-Type': 'application/json' }
+            });
+            console.log(`Esta es la respuesta: ${res.data}!!!!!`);
+            setStatusMessage('Email sent successfully');
+
         } catch (error) {
-            alert('Failed to send email');
+            setStatusMessage(`Failed to send email: ${error}`);
+        } finally {
+            setIsLoading(false);
         }
     };
-        
+
+
 
     return (
         <div className='xl:h-[800px] mb-6 mt-20'>
@@ -61,7 +70,7 @@ function ContactForm() {
                             </div>
                             <div className=' w-[256px] h-[52px] relative '>
                                 <div className=' absolute top-[25px] w-full'>
-                                    <input value={email} onChange={(e) => setEmail(e.target.value)}  className=' w-full px-[10px] placeholder:text-[#585F58] placeholder:italic' placeholder='We will send you information' type="email" style={{ borderRadius: '5px', borderWidth: '2px', borderColor: '#5D388D' }} />
+                                    <input value={email} onChange={(e) => setEmail(e.target.value)} className=' w-full px-[10px] placeholder:text-[#585F58] placeholder:italic' placeholder='We will send you information' type="email" style={{ borderRadius: '5px', borderWidth: '2px', borderColor: '#5D388D' }} />
                                 </div>
                                 <label className='flex flex-col bg-white py-1 absolute top-0 left-3'>
                                     Email
@@ -69,7 +78,19 @@ function ContactForm() {
                             </div>
                             <div className=' w-[256px] h-[52px] relative '>
                                 <div className=' absolute top-[25px] w-full'>
-                                    <input value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}  className=' w-full px-[10px] placeholder:text-[#585F58] placeholder:italic' placeholder='We will send you information' type="tel" style={{ borderRadius: '5px', borderWidth: '2px', borderColor: '#5D388D' }} />
+                                    <input
+                                        value={phoneNumber}
+                                        onChange={(e) => {
+                                            const val = e.target.value;
+                                            if (val.match(/^[0-9+]*$/)) {
+                                                setPhoneNumber(val);
+                                            }
+                                        }}
+                                        className=' w-full px-[10px] placeholder:text-[#585F58] placeholder:italic'
+                                        placeholder='with your country code'
+                                        type="tel"
+                                        style={{ borderRadius: '5px', borderWidth: '2px', borderColor: '#5D388D' }}
+                                    />
                                 </div>
                                 <label className='flex flex-col bg-white py-1 absolute top-0 left-3'>
                                     Phone number
@@ -77,7 +98,7 @@ function ContactForm() {
                             </div>
                             <div className=' sm:w-[298px] h-[102px] relative '>
                                 <div className=' absolute top-[25px] w-full'>
-                                    <textarea value={message} onChange={(e) => setMessage(e.target.value)}  className=' py-4 w-full px-[10px] placeholder:text-[#585F58] placeholder:italic' style={{ borderRadius: '5px', borderWidth: '2px', borderColor: '#5D388D' }} />
+                                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} className=' py-4 w-full px-[10px] placeholder:text-[#585F58] placeholder:italic' style={{ borderRadius: '5px', borderWidth: '2px', borderColor: '#5D388D' }} />
                                 </div>
                                 <label className='flex flex-col bg-white py-1 absolute top-0 left-3'>
                                     Leave us a message
@@ -90,16 +111,16 @@ function ContactForm() {
                                     Plan
                                     <div className='flex pl-[10px] sm:pl-0 sm:flex-row flex-col  py-[10px] text-[17px] font-medium' style={{ borderRadius: '5px', borderWidth: '2px', borderColor: '#5D388D' }}>
                                         <div>
-                                            <input  onChange={(e) => setPlan(e.target.value)}  className=' sm:ml-[5.7px] mr-[4px]' type="checkbox" name="Standard" value="Standard" />
+                                            <input onChange={(e) => setPlan(e.target.value)} className=' sm:ml-[5.7px] mr-[4px]' type="checkbox" name="Standard" value="Standard" />
                                             <label className=' mr-[25px]' >Standard</label>
                                         </div>
                                         <div>
-                                            <input  onChange={(e) => setPlan(e.target.value)}  className='mr-[4px]' type="checkbox" name="Premiun" value="Premium" />
+                                            <input onChange={(e) => setPlan(e.target.value)} className='mr-[4px]' type="checkbox" name="Premiun" value="Premium" />
                                             <label className=' mr-[25px]'>Premiun</label>
 
                                         </div>
                                         <div>
-                                            <input  onChange={(e) => setPlan(e.target.value)}  className='mr-[4px]' type="checkbox" name="CustomMade" value="CustomMade" />
+                                            <input onChange={(e) => setPlan(e.target.value)} className='mr-[4px]' type="checkbox" name="CustomMade" value="CustomMade" />
                                             <label className=' mr-[5.7px]'>Custom Made</label>
 
                                         </div>
@@ -108,11 +129,19 @@ function ContactForm() {
 
                             </div>
                             <div className=" sm:w-[287px] w-[190px] h-[43px] max-[640px]:mt-[70px] max-[640px]:mx-auto text-white">
-                            <button type="submit" className=' bg-[#F52432] w-full h-full rounded-[10px] hover:bg-[#FF4F5A]'>
-                                Get information
-                            </button>
-                        </div>
+                                {/* <button type="submit" className=' bg-[#F52432] w-full h-full rounded-[10px] hover:bg-[#FF4F5A]'>
+                                    Get information
+                                </button> */}
+                                <Button type='submit' isLoading={isLoading} className=' bg-[#F52432] w-full h-full rounded-[10px] text-white hover:bg-[#FF4F5A]' >
+                                    {statusMessage}
+                                </Button>
+                            </div>
+                            {/* <div className=' text-black font-extrabold text-lg'>
+                                <p>
+                                    {statusMessage}
+                                </p>
 
+                            </div> */}
                         </form>
 
 

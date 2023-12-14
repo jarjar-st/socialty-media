@@ -5,7 +5,7 @@ import React from 'react'
 function Plans() {
   return (
     <div className=' font-roboto w-full h-full '>
-      <div className=' w-full pt-[164px] h-[100vh] bg-[url("/home2.webp")] lg:bg-top bg-[top_-2rem_right_-8rem] sm:bg-[top_-2rem_right_-8rem]   bg-cover bg-no-repeat'>
+      <div className=' w-full pt-[164px] h-[100vh] bg-[url("/planes-plans.webp")] lg:bg-top bg-[top_-2rem_left_-28rem] sm:bg-[top_-2rem_left_-16rem]   bg-cover bg-no-repeat'>
         <div className='text-white text-5xl px-10 md:pl-[5.438rem] pt-12 font-semibold tracking-[-0.18rem] md:leading-[4.063rem] md:text-[4rem] max-[320px]:text-[40px] [text-shadow:0px_4px_4px_rgba(0,_0,_0,_0.25)]'>
           <p>Need a website</p>
           <p>but don´t know</p>

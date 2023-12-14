@@ -4,7 +4,7 @@ import React from 'react'
 function About() {
     return (
         <div className=' relative font-roboto w-full h-full'>
-            <div className='w-full min-[325px]:h-[1571px] h-[1672px]  pt-[164px] bg-[url("/about-bg.webp")] bg-cover lg:bg-right sm:bg-[top_left_-16rem] bg-[top_right_-38rem] bg-no-repeat'>
+            <div className='w-full min-[325px]:h-[1571px] h-[1672px]  pt-[164px] bg-[url("/Conocenos-aboutUs.webp")] bg-cover lg:bg-[bottom_left_-24rem] sm:bg-[top_center] bg-[top_center] bg-no-repeat'>
 
                 <div className='text-white  text-5xl px-10 md:pl-[5.438rem] pt-12 font-semibold tracking-[-0.18rem] md:leading-[4.063rem] md:text-[4rem] max-[320px]:text-[40px] [text-shadow:0px_4px_4px_rgba(0,_0,_0,_0.25)]'>
                     <p>Need a website</p>
@@ -18,11 +18,11 @@ function About() {
                     <div className=" sm:static absolute left-2 xl:text-[300px] text-[250px]  font-medium not-italic text-crimson-200 text-left comillas  mb-0 pb-0" >
                         &#8216;&#8216;
                     </div>
-                    <div className=' absolute sm:static top-[793px] font-extrabold text-left min-[1440px]:mr-[81px]   w-[262px] h-[71px] pb-[100px] text-6xl text-[#1F261F]'>
+                    <div className=' absolute sm:static top-[793px] font-extrabold text-left min-[1440px]:mr-[81px]   w-[262px] h-[71px] pb-[100px] [text-shadow:0px_4px_4px_rgba(0,_0,_0,_0.25)] text-6xl text-white'>
                         Meet Us
                     </div>
                     <div className=' flex-col'>
-                        <div className=' absolute lg:top-[933px] top-[883px] md:max-lg:left-[120px] max-sm:left-10  w-[80%]   sm:w-[527px] sm:h-[316px] text-[#1F261F] text-justify text-[24px] tracking-[-1.08px] font-normal leading-[30px]'>
+                        <div className=' absolute lg:top-[933px] top-[883px] md:max-lg:left-[120px] max-sm:left-10  w-[80%]   sm:w-[527px] sm:h-[316px] [text-shadow:0px_4px_4px_rgba(0,_0,_0,_0.25)] text-white text-justify text-[24px] tracking-[-1.08px] font-normal leading-[30px]'>
                             Us? Here at Socialty Media it&#180;s all about YOU. Your goals, your customers, and your business. We are your team!
                             A diverse, knowledgeable, and creative group who builds you personalized logos, websites, social media,
                             and advertising campaigns that fit your individual business goals. It&#180;s never easy to take the first step out of
