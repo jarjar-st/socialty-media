@@ -46,7 +46,7 @@ function Footer() {
 
                     <div className=' w-full sm:w-[431px] h-[30px] text-center text-white lg:pt-[112px] pt-[50px]'>
                         <Link
-                            href={"#"}
+                            href={"/policy"}
                             className=' text-center text-[16px] tracking-[-0.72px]'
                         >
                             2023 All Rights Reserved. SocialtyMedia
@@ -59,7 +59,7 @@ function Footer() {
                     </div>
                     <div className='  ml-[195px] w-[130px] h-[50px] md:flex flex-row mt-[55px] gap-[30px] lg:relative xl:static hidden '>
                         <div>
-                            <Link href={"#"}>
+                            <Link href={"https://www.facebook.com/profile.php?id=61555361484753"}>
                                 <Image
                                     className=' lg:absolute lg:right-[180px] xl:static xl:right-0 hover:opacity-50 '
                                     src={"/facebookIcono.webp"}
