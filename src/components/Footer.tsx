@@ -71,7 +71,10 @@ function Footer() {
 
                         </div>
                         <div>
-                            <Link href={"#"}>
+                            <Link 
+                            href={"https://www.instagram.com/socialtymedia/"}
+                            target='_blank'
+                            >
                                 <Image
                                     className=' lg:absolute lg:right-[90px] xl:static xl:right-0 hover:opacity-50'
                                     src={"/instagramIcono.webp"}

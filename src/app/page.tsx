@@ -98,10 +98,10 @@ function Home() {
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white font-bold">
-                <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+                <div className=' bg-[#5D388D] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
                 >
                   <Link
-                    className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
+                    className='  px-[25.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
                     aria-label='Contact Us'
                     href='/contact'
                   >
@@ -138,10 +138,10 @@ function Home() {
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white font-bold">
-              <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+              <div className=' bg-[#5D388D] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
                 >
                   <Link
-                    className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
+                    className='  px-[25.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
                     aria-label='Contact Us'
                     href='/contact'
                   >
@@ -172,10 +172,10 @@ function Home() {
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white font-bold">
-              <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+              <div className=' bg-[#5D388D] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
                 >
                   <Link
-                    className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
+                    className='  px-[25.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
                     aria-label='Contact Us'
                     href='/contact'
                   >

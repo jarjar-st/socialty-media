@@ -12,7 +12,7 @@ function About() {
                     <p>where to start?</p>
                 </div>
                 <div className='px-10 md:pl-[5.438rem] pt-3 '>
-                    <CustomButton text='Click Here' href='?' />
+                    <CustomButton text='Contact us' href='?' />
                 </div>
                 <div className=' flex sm:flex-row flex-col mt-[191px] lg:mt-[291px] min-[1440px]:ml-[200px] xl:ml-[100px] ml-[30px] items-center'>
                     <div className=" sm:static absolute left-2 xl:text-[300px] text-[250px]  font-medium not-italic text-crimson-200 text-left comillas  mb-0 pb-0" >

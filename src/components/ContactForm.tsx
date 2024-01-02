@@ -132,7 +132,7 @@ function ContactForm() {
                                 {/* <button type="submit" className=' bg-[#F52432] w-full h-full rounded-[10px] hover:bg-[#FF4F5A]'>
                                     Get information
                                 </button> */}
-                                <Button type='submit' isLoading={isLoading} className=' bg-[#F52432] w-full h-full rounded-[10px] text-white hover:bg-[#FF4F5A]' >
+                                <Button type='submit' isLoading={isLoading} className=' bg-[#5D388D] w-full h-full rounded-[10px] text-white hover:bg-[#FF4F5A]' >
                                     {statusMessage}
                                 </Button>
                             </div>

@@ -12,9 +12,9 @@ function Hero() {
         },
         {
             img: "/home2.webp",
-            text: "TIRED OF THE",
-            text1: "RAT RACE?",
-            text2: " Get Out Now with our convenient <br> start up packages.",
+            text: "Tired of the",
+            text1: "Rat Race?",
+            text2: " Get out now with our convenient <br> start up packages.",
         },
         {
             img: "/about-bg.webp",
@@ -54,7 +54,7 @@ function Hero() {
             left: 0,
             right: 0,
             bottom: 0,
-        }} className={currentIndex == 1 ? 'w-full pt-[164px] h-[100vh] bg-no-repeat bg-cover bg-top overflow-hidden' : currentIndex == 2?'w-full pt-[164px] h-[100vh] bg-no-repeat bg-cover lg:bg-top sm:bg-[top_4rem_left_-8rem] bg-[top_right_-20rem] overflow-hidden' :'w-full pt-[164px] h-[100vh] bg-no-repeat bg-cover overflow-hidden'}>
+        }} className={currentIndex == 1 ? 'w-full pt-[164px] h-[100vh] bg-no-repeat bg-cover bg-top overflow-hidden' : currentIndex == 2?'w-full pt-[164px] h-[100vh] bg-no-repeat bg-cover lg:bg-top sm:bg-[top_4rem_left_-8rem]  bg-[top_right_-17rem] overflow-hidden' :'w-full pt-[164px] h-[100vh] bg-no-repeat bg-cover overflow-hidden'}>
             {/* <Navbar />
             <MobNavbar /> */}
             <div className='text-white text-5xl px-10 md:pl-[5.438rem] pt-12 font-semibold tracking-[-0.18rem] md:leading-[4.063rem] md:text-[4rem] max-[320px]:text-[40px] [text-shadow:0px_4px_4px_rgba(0,_0,_0,_0.25)]'>
@@ -67,7 +67,7 @@ function Hero() {
                 </p>
             </div>
             <div className='px-10 md:pl-[5.438rem] pt-3 '>
-                <CustomButton text='Click Here' href=''/>
+                <CustomButton text='Contact us' href=''/>
             </div>
         </div>
     )

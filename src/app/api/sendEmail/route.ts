@@ -5,7 +5,6 @@ export async function POST(
   req: Request,
   res: Response
 ) {
-  console.log("si entra!!!!!");
   let passedValue = await new Response(req.body).text();
   let bodyreq = JSON.parse(passedValue);
   const { fullName, email, phoneNumber, message, plan } = bodyreq;
@@ -23,7 +22,7 @@ export async function POST(
 
   const mailOptions = {
     from: 'contact@socialtymedia.com',
-    to: 'josue_benjamin12@hotmail.com',
+    to: 'hello@socialtymedia.com',
     subject: 'New Contact Form Submission',
     text: `Full Name: ${fullName}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nMessage: ${message}\nPlan: ${plan}`
   };
@@ -36,6 +35,24 @@ export async function POST(
           reject(error);
         } else {
           console.log('Email sent: ' + info.response);
+          resolve(info);
+        }
+      });
+    });
+    
+    const forwardMailOptions = {
+      ...mailOptions,
+      // to: 'ingridcho@socialtymedia.com', 
+      to:'ingridcho@socialtymedia.com',
+    };
+  
+    await new Promise((resolve, reject) => {
+      transporter.sendMail(forwardMailOptions, (error, info) => {
+        if (error) {
+          console.log(error);
+          reject(error);
+        } else {
+          console.log('Email forwarded: ' + info.response);
           resolve(info);
         }
       });

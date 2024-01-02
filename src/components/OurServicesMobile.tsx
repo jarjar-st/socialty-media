@@ -41,7 +41,7 @@ function OurServices() {
         <p className="m-0">WITH SOCIALTY MEDIA</p>
       </div>
       <div className=" absolute min-[330px]:top-[1460px] top-[1630px]  mt-[40px] min-[330px]:ml-[100px] ml-[70px]  sm:w-[287px] w-[190px] h-[43px] text-white">
-          <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+          <div className=' bg-[#5D388D] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
           >
             <Link
               className=' rounded-[10px] text-white'

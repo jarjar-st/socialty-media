@@ -14,7 +14,7 @@ function Contact() {
                     <p>where to start?</p>
                 </div>
                 <div className='px-10 md:pl-[5.438rem] pt-3 absolute top-[420px] z-30'>
-                    <CustomButton text='Click Here' href='?' />
+                    <CustomButton text='Contact us' href='?' />
                 </div>
                 <div className=" w-[30.21%] absolute top-[0px] right-[59.72%] left-[0.07%] [background:linear-gradient(90deg,_rgba(93,_56,_141,_0.61)_68.17%,_rgba(217,_217,_217,_0))] h-[100vh]" />
 

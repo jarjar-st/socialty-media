@@ -12,7 +12,7 @@ function Plans() {
           <p>where to start?</p>
         </div>
         <div className='px-10 md:pl-[5.438rem] pt-3 '>
-          <CustomButton text='Click Here' href='?' />
+          <CustomButton text='Contact us' href='?' />
         </div>
 
       </div>
@@ -47,7 +47,7 @@ function Plans() {
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
-                <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+                <div className=' bg-[#5D388D] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
                 >
                   <Link
                     className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
@@ -89,7 +89,7 @@ function Plans() {
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
-                <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+                <div className=' bg-[#5D388D] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
                 >
                   <Link
                     className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
@@ -114,18 +114,18 @@ function Plans() {
                 Custom Made
               </div>
               <div className=' mx-[33px] mt-[30px] leading-[25px] sm:w-[294px] w-[290px] h-[82px] text-center text-[20px] font-semibold tracking-[-0.9px] inline-block'>
-                Best for new entrepreneurs needing a basic informative website.
+                Best for entrepreneurs looking for specific needs.
               </div>
               <div className=' sm:w-[307px] w-[290px] h-[301px] text-left tracking-[-0.04em]'>
                 <ul className="m-0 pl-6 list-disc">
-                <li className="mb-0 text-[#1F261F] font-normal">
+                  <li className="mb-0 text-[#1F261F] font-normal">
                     <p>Only need a website, just social media management or specific services?</p>
                     <p>Request a personalized quote for your individual needs.</p>
-                    </li>
+                  </li>
                 </ul>
               </div>
               <div className=" sm:w-[287px] w-[190px] h-[43px] text-white">
-                <div className=' bg-[#F52432] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
+                <div className=' bg-[#5D388D] text-center w-full h-full rounded-[10px] p-[10px] hover:bg-[#FF4F5A]'
                 >
                   <Link
                     className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'

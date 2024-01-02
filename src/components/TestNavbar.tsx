@@ -27,32 +27,12 @@ export default function App() {
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="lg:hidden"
+          tabIndex={0}
         />
 
       </NavbarContent>
 
-      <NavbarContent className="hidden lg:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
-          </Link>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-      </NavbarContent>
+
       <NavbarMenu className=" ">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
@@ -74,6 +54,7 @@ export default function App() {
               
               }
               size="lg"
+              tabIndex={0}
             >
               {item}
             </Link>

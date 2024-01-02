@@ -60,7 +60,7 @@ const ServiceCard: React.FC<CardProps> = ({ serviceName, description, cardImage,
                                 <p className="m-0 leading-6 font-semibold">{serviceName}</p>
                             </div>
                             <button
-                                className='text-white mt-[14.42px]  bg-crimson-100 rounded-[10px] w-[142.125px] h-[36.595px] text-[20px] font-normal hover:bg-[#FF4F5A]'
+                                className='text-white mt-[14.42px]  bg-[#5D388D] rounded-[10px] w-[142.125px] h-[36.595px] text-[20px] font-normal hover:bg-[#FF4F5A]'
                                 onClick={handleOverlayClick}
                             >
                                 Check this
@@ -94,7 +94,7 @@ const ServiceCard: React.FC<CardProps> = ({ serviceName, description, cardImage,
                         <Link
                             href='/contact'
                             aria-label='Contact Us'
-                            className='text-white  bg-crimson-100 rounded-[10px] w-[142.125px] h-[36.595px] text-[20px] pt-[2px] font-normal text-center mt-10 hover:bg-[#FF4F5A]'
+                            className='text-white  bg-[#5D388D] rounded-[10px] w-[142.125px] h-[36.595px] text-[20px] pt-[2px] font-normal text-center mt-10 hover:bg-[#FF4F5A]'
                         >
                             Get started
                         </Link>
