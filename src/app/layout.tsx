@@ -21,8 +21,9 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: 'Socialty Media',
+  robots: 'follow, index',
   description: 'Social Media services for your business',
-  keywords: 'marketing digital, desarrollo web, SEO, redes sociales, publicidad online',
+  keywords: 'digital marketing, web development, SEO, social networks, online advertising',
   openGraph: {
     type: 'website',
     locale: 'en_US',

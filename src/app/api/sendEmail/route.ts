@@ -23,7 +23,7 @@ export async function POST(
   const mailOptions = {
     from: 'contact@socialtymedia.com',
     to: 'hello@socialtymedia.com',
-    subject: 'New Contact Form Submission',
+    subject: 'New Contact From Socialty Media',
     text: `Full Name: ${fullName}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nMessage: ${message}\nPlan: ${plan}`
   };
 

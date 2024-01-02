@@ -13,7 +13,7 @@ function Hero() {
         {
             img: "/home2.webp",
             text: "Tired of the",
-            text1: "Rat Race?",
+            text1: "rat race?",
             text2: " Get out now with our convenient <br> start up packages.",
         },
         {
@@ -45,7 +45,8 @@ function Hero() {
     }, []);
 
     return (
-        <div style={{
+        <div rel='preload'
+        style={{
             backgroundImage: `url(${slides[currentIndex].img})`,
             transition: 'opacity 0.2s ease-in-out',
             opacity: opacity,

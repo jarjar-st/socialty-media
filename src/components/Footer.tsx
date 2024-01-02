@@ -59,7 +59,10 @@ function Footer() {
                     </div>
                     <div className='  ml-[195px] w-[130px] h-[50px] md:flex flex-row mt-[55px] gap-[30px] lg:relative xl:static hidden '>
                         <div>
-                            <Link href={"https://www.facebook.com/profile.php?id=61555361484753"}>
+                            <Link 
+                            href={"https://www.facebook.com/profile.php?id=61555361484753"}
+                            target='_blank'
+                            >
                                 <Image
                                     className=' lg:absolute lg:right-[180px] xl:static xl:right-0 hover:opacity-50 '
                                     src={"/facebookIcono.webp"}
