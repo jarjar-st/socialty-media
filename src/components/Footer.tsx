@@ -16,6 +16,7 @@ function Footer() {
                         <Image
                             src={"/email-1-1@2x.webp"}
                             alt='Icono de Correo'
+                            loading='lazy'
                             width={48}
                             height={48}
                         />
@@ -29,6 +30,7 @@ function Footer() {
                                 className='lg:hidden'
                                 src={"/facebookIcono.webp"}
                                 alt='Icono de Correo'
+                                loading='lazy'
                                 width={64}
                                 height={64}
                             />
@@ -38,6 +40,7 @@ function Footer() {
                                 className='lg:hidden'
                                 src={"/instagramIcono.webp"}
                                 alt='Icono de Correo'
+                                loading='lazy'
                                 width={64}
                                 height={64}
                             />
@@ -67,6 +70,7 @@ function Footer() {
                                     className=' lg:absolute lg:right-[180px] xl:static xl:right-0 hover:opacity-50 '
                                     src={"/facebookIcono.webp"}
                                     alt='Icono de facebook'
+                                    loading='lazy'
                                     width={64}
                                     height={64}
                                 />
@@ -80,6 +84,7 @@ function Footer() {
                             >
                                 <Image
                                     className=' lg:absolute lg:right-[90px] xl:static xl:right-0 hover:opacity-50'
+                                    loading='lazy'
                                     src={"/instagramIcono.webp"}
                                     alt='Icono de instagram'
                                     width={64}

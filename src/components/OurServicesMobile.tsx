@@ -45,7 +45,7 @@ function OurServices() {
           >
             <Link
               className=' rounded-[10px] text-white'
-              aria-label='Contact Us'
+              aria-label='Get Started'
               href='/contact'
             >
               Get Started

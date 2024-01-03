@@ -51,6 +51,7 @@ const ServiceCard: React.FC<CardProps> = ({ serviceName, description, cardImage,
                                 className="h-[85.62%] w-[87.5%] max-w-full overflow-hidden max-h-full object-cover"
                                 width={918}
                                 height={905}
+                                loading='lazy'
                                 alt="Web Development"
                                 src={cardImage}
                             />
@@ -93,7 +94,7 @@ const ServiceCard: React.FC<CardProps> = ({ serviceName, description, cardImage,
 
                         <Link
                             href='/contact'
-                            aria-label='Contact Us'
+                            aria-label='Get Started'
                             className='text-white  bg-[#5D388D] rounded-[10px] w-[142.125px] h-[36.595px] text-[20px] pt-[2px] font-normal text-center mt-10 hover:bg-[#FF4F5A]'
                         >
                             Get started

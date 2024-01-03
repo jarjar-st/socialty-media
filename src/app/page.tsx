@@ -102,7 +102,7 @@ function Home() {
                 >
                   <Link
                     className='  px-[25.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
-                    aria-label='Contact Us'
+                    aria-label='Get Started'
                     href='/contact'
                   >
                     Get Started
@@ -142,7 +142,7 @@ function Home() {
                 >
                   <Link
                     className='  px-[25.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
-                    aria-label='Contact Us'
+                    aria-label='Get Started'
                     href='/contact'
                   >
                     Get Started
@@ -176,7 +176,7 @@ function Home() {
                 >
                   <Link
                     className='  px-[25.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
-                    aria-label='Contact Us'
+                    aria-label='Get Started'
                     href='/contact'
                   >
                     Get Started

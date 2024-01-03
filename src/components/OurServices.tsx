@@ -30,7 +30,7 @@ function OurServices() {
           >
             <Link
               className=' rounded-[10px] text-white text-center    px-[29.2%]  py-[9px]  '
-              aria-label='Contact Us'
+              aria-label='Get Started'
               href='/contact'
             >
               Get Started
