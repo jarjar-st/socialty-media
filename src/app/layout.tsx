@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
-import localFont from 'next/font/local'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { Providers } from "./providers";
 import TestNavbar from '@/components/TestNavbar'
+import GoogleAnalytics from "@/GoogleAnalytics";
 
 const roboto = Roboto({
   weight: ['300', '400', '700', '900'],
@@ -50,11 +50,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en"  className=' relative'>
+    <html lang="en" className=' relative'>
       <body className={`${roboto.className} `}>
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+          <GoogleAnalytics ga_id=
+            {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+        ) : null}
         <Providers>
-          <TestNavbar/>
-        <Navbar />
+          <TestNavbar />
+          <Navbar />
           {children}
         </Providers>
         <Footer />

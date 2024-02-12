@@ -1,5 +1,5 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
 import nodemailer from 'nodemailer'
+import axios from 'axios';
 
 export async function POST(
   req: Request,
@@ -7,8 +7,19 @@ export async function POST(
 ) {
   let passedValue = await new Response(req.body).text();
   let bodyreq = JSON.parse(passedValue);
-  const { fullName, email, phoneNumber, message, plan } = bodyreq;
+  const { fullName, email, phoneNumber, message, plan, captcha } = bodyreq;
   console.log(bodyreq);
+
+    // Verificar el valor del reCAPTCHA con la API de verificación de reCAPTCHA
+    const secretKey = "6LcqPnApAAAAAKIHIw4Ot5sYCZzzLAsfdOBohgTq";
+    const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${captcha}`;
+    const response = await axios.post(verifyUrl);
+    const body = response.data;
+  
+    // Si la verificación falla, enviar una respuesta de error
+    if (body.success !== true) {
+      return Response.json({ message: 'Captcha verification failed' });
+    }
 
   const transporter = nodemailer.createTransport({
     host: 'mail.socialtymedia.com',
@@ -23,6 +34,7 @@ export async function POST(
   const mailOptions = {
     from: 'contact@socialtymedia.com',
     to: 'hello@socialtymedia.com',
+    // to: "josue_benjamin12@hotmail.com",
     subject: 'New Contact From Socialty Media',
     text: `Full Name: ${fullName}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nMessage: ${message}\nPlan: ${plan}`
   };
@@ -44,6 +56,7 @@ export async function POST(
       ...mailOptions,
       // to: 'ingridcho@socialtymedia.com', 
       to:'ingridcho@socialtymedia.com',
+      // to: 'josue_benjamin12@hotmail.com',
     };
   
     await new Promise((resolve, reject) => {
@@ -60,6 +73,6 @@ export async function POST(
     return Response.json({ message: 'Hello - GET' });
   } catch (error) {
     console.error(error);
-    return Response.json({ message: 'BAd - GET' });
+    return Response.json({ message: 'Bad - GET' });
   }
 }
