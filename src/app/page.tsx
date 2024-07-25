@@ -5,6 +5,7 @@ import OurServices from '@/components/OurServices'
 import OurServicesMobile from '@/components/OurServicesMobile'
 import ServiceCard from '@/components/ServiceCard'
 import Hero from '@/components/Hero'
+import { CarouselDemo } from '@/components/TestingCarousel'
 
 
 
@@ -12,8 +13,11 @@ function Home() {
   return (
     <div className=' font-roboto w-full h-full '>
       {/* Primera Parte */}
-      <div className=' w-full h-[100vh] '>
-        <Hero />
+      {/* <div className=' w-full h-[100vh] '> */}
+      <div className=' w-full '>
+
+        {/* <Hero /> */}
+        <CarouselDemo/>
       </div>
       
 
