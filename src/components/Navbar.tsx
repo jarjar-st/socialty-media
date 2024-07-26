@@ -18,13 +18,16 @@ function Navbar() {
                     />
                 </Link>
                 
-                <div className=' z-10  flex w-[430px] h-[23px] gap-10 mx-auto pr-8 font-medium py-4 text-white items-center justify-center mt-[43px] text-[20px]  '>
+                <div className=' z-10  flex w-[530px] h-[23px] gap-10 mx-auto pr-8 font-medium py-4 text-white items-center justify-center mt-[43px] text-[20px]  '>
 
                     <Link className={`navbar__link relative hover:underline decoration-[0.5px] ${activeLink === 'Home' ? 'font-bold' : ''}`} onClick={() => setActiveLink('Home')}  href={"/"}>
                         Home
                     </Link>
                     <Link className={`navbar__link relative hover:underline decoration-[0.5px] ${activeLink === 'About us' ? 'font-bold' : ''}`} onClick={() => setActiveLink('About us')}  href={"/about"}>
                         About us
+                    </Link>
+                    <Link className={`navbar__link relative hover:underline decoration-[0.5px] ${activeLink === 'Work' ? 'font-bold' : ''}`} onClick={() => setActiveLink('Work')}  href={"/work"}>
+                    Work
                     </Link>
                     <Link className={`navbar__link relative hover:underline decoration-[0.5px] ${activeLink === 'Plans' ? 'font-bold' : ''}`} onClick={() => setActiveLink('Plans')}  href={"/plans"}>
                         Plans

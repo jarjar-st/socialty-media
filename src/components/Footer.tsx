@@ -1,9 +1,10 @@
-
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 function Footer() {
+    const currentYear = new Date().getFullYear();
     
     return (
         
@@ -52,7 +53,7 @@ function Footer() {
                             href={"/policy"}
                             className=' text-center text-[16px] tracking-[-0.72px]'
                         >
-                            2023 All Rights Reserved. SocialtyMedia
+                            &copy; {currentYear} All Rights Reserved. SocialtyMedia
                         </Link>
 
                     </div>

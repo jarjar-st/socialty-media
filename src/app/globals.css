@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.embla {
+    overflow: hidden;
+    height: 100vh;
+  }
+  .embla__container {
+    display: flex;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+  
+
 /* @font-face {
     font-family: 'Roboto';
     src: url('/fonts/Roboto-Regular.ttf') format('truetype');

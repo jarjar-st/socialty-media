@@ -5,7 +5,7 @@ import OurServices from '@/components/OurServices'
 import OurServicesMobile from '@/components/OurServicesMobile'
 import ServiceCard from '@/components/ServiceCard'
 import Hero from '@/components/Hero'
-import { CarouselDemo } from '@/components/TestingCarousel'
+import  EmblaCarousel  from '@/components/TestingCarousel'
 
 
 
@@ -17,7 +17,7 @@ function Home() {
       <div className=' w-full '>
 
         {/* <Hero /> */}
-        <CarouselDemo/>
+        <EmblaCarousel/>
       </div>
       
 
