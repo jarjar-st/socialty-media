@@ -37,10 +37,10 @@ const config: Config = {
         darkslateblue: "#5d388d",
         whitesmoke: "#f5f5f5",
       },
-      // fontFamily: {
-      //   roboto: ['var(--font-roboto)'],
-      //   gotham: ['var(--font-gotham)'],
-      // }
+      fontFamily: {
+        roboto: ['var(--font-roboto)'],
+        gotham: ['var(--font-gotham)'],
+      }
     },
   },
   darkMode: "class",
