@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title: 'Socialty Media',
   robots: 'follow, index',
   description: 'Social Media services for your business',
-  keywords: 'digital marketing, web development, SEO, social networks, online advertising',
+  keywords: 'Entrepreneurship, Small business, Social media marketing, Digital marketing, Web development, SEO, Search engine optimization, Social networks, Online advertising, Miami area, Brand growth, Social media strategy, Start up Marketing',
   openGraph: {
     type: 'website',
     locale: 'en_US',

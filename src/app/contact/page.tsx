@@ -14,13 +14,16 @@ function Contact() {
                     <p>where to start?</p>
                 </div>
                 <div className='px-10 md:pl-[5.438rem] pt-3 absolute top-[420px] z-30'>
-                    <CustomButton text='Contact us' href='?' />
+                    <CustomButton text='Contact us' href='#contact-form' />
                 </div>
                 <div className=" w-[30.21%] absolute top-[0px] right-[59.72%] left-[0.07%] [background:linear-gradient(90deg,_rgba(93,_56,_141,_0.61)_68.17%,_rgba(217,_217,_217,_0))] h-[100vh]" />
 
 
+            </div >
+            <div id="contact-form">
+                <ContactForm/>
             </div>
-            <ContactForm/>
+            
 
         </div>
     )

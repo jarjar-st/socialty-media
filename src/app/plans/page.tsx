@@ -52,7 +52,7 @@ function Plans() {
                   <Link
                     className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
                     aria-label='Get Started'
-                    href='/contact'
+                    href='/contact#contact-form'
                   >
                     Get Started
                   </Link>
@@ -95,7 +95,7 @@ function Plans() {
                   <Link
                     className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
                     aria-label='Get Started'
-                    href='/contact'
+                    href='/contact#contact-form'
                   >
                     Get Started
                   </Link>
@@ -132,7 +132,7 @@ function Plans() {
                   <Link
                     className='  px-[26.2%] sm:px-[90px] py-[10px] rounded-[10px] text-white'
                     aria-label='Get Started'
-                    href='/contact'
+                    href='/contact#contact-form'
                   >
                     Get Started
                   </Link>

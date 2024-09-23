@@ -11,7 +11,7 @@ const Page = () => {
           <p>your business</p>
         </div>
         <div className='px-10 md:pl-[5.438rem] pt-3 mt-5'>
-          <CustomButton text='Contact us' href='?' />
+          <CustomButton text='Contact us' href='/contact#contact-form' />
         </div>
         <div className='text-white text-5xl px-10 md:pl-[5.438rem] pt-12 font-semibold tracking-[-0.10rem] md:leading-[2.063rem] md:text-[30px] max-[320px]:text-[40px] [text-shadow:0px_4px_4px_rgba(0,_0,_0,_0.25)]'>
           <p>Contact us and start boosting your</p>
@@ -79,28 +79,26 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className='w-full max-w-[1200px] bg-[#DDDDDD] h-auto p-6 mt-10'>
-          <div className="flex flex-col lg:flex-row justify-center items-center gap-8">
+        <div className='w-full max-w-[1200px] bg-[#DDDDDD] pb-5 h-auto mt-10'>
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
             <div className="w-full lg:w-1/2">
-              <div className='w-full h-auto mt-10'>
+              <div className='w-full h-[400px] mt-10 relative'>
                 <Image
                   src={"/Presentacion 1.webp"}
                   alt={`banner en valla`}
-                  layout='responsive'
-                  width={569}
-                  height={321}
+                  layout='fill'
+                  objectFit='cover'
                   className='object-cover'
                 />
               </div>
             </div>
-            <div className="w-full lg:w-1/2">
-              <div className='w-full h-auto mt-10'>
+            <div className="w-full lg:w-1/3">
+              <div className='w-full h-[400px] mt-10 relative'>
                 <Image
-                  src="/PRODUCTO SUNLIGHT.png"
+                  src="/3d.webp"
                   alt='banner en valla'
-                  layout='responsive'
-                  width={569}
-                  height={321}
+                  layout='fill'
+                  objectFit='contain'
                   className='object-cover'
                 />
               </div>
